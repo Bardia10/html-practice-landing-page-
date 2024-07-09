@@ -103,3 +103,71 @@ main {
       width: 100%; /* Stack team members on top of each other for very small screens */
     }
   }
+
+  .choose-plan {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .plan-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    gap: 20px; /* Adjust gap size as needed */
+    padding-bottom: 20px; /* Adds space below plans for potential scrollbar */
+  }
+  
+  .plan-card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    width: 33%; /* Adjust width as needed for desired number of plans per row */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .plan-card img {
+    width: 100%; /* Image scales relative to card width */
+    margin-bottom: 10px; /* Add space between image and title */
+  }
+  
+  .plan-description {
+    line-height: 1.5; /* Adjust line spacing for better readability */
+    font-size: 14px; /* Adjust font size as needed */
+    /* Important styles for description text */
+    overflow-wrap: break-word; /* Ensures text wraps to new line */
+    /* Set a maximum height for the description and add ellipsis (...) if content overflows */
+    max-height: 80px;  /* Adjust as needed */
+    display: -webkit-box; /* For older Safari versions */
+    -webkit-line-clamp: 3; /* Limit the number of lines shown */
+    -webkit-box-orient: vertical; /* Stack text vertically */
+    overflow: hidden; /* Hide text that overflows */
+    text-overflow: ellipsis; /* Add ellipsis (...) at the end */
+  }
+  
+  .price-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .price-box.discounted .crossed-out {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .price-box.discounted .discount {
+    color: #3992ac; /* Adjust discount color */
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .plan-card {
+      width: 50%; /* Adjust width for smaller screens (optional) */
+    }
+  }
+  
+  
