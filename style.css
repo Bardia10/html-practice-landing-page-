@@ -2,10 +2,11 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #dadfe8;
 }
 
 header {
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -77,32 +78,41 @@ main {
     padding: 50px 0;
   }
   
-.team-members {
+  .team-members {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px; /* Adjust gap size as needed */
   }
   
-.team-member {
+  .team-member {
     text-align: center;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    width: calc(33% - 40px); /* Adjust width for desired number of members per row */
+    width: calc(33% - 40px); /* Adjust width for desired number of members per row (optional) */
+    /* Responsive behavior for stacking */
+    flex: 1 0 auto; /* Makes each member box flexible */
   }
   
-@media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     .team-member {
-      width: 50%; /* Adjust width for smaller screens */
+      width: 50%; /* Adjust width for smaller screens (optional) */
     }
   }
   
-@media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .team-member {
-      width: 100%; /* Stack team members on top of each other for very small screens */
+      width: 100%; /* Stack members on very small screens */
     }
   }
+  
+  /* Ensures images fit within their boxes */
+  .team-member img {
+    max-width: 100%; /* Fills the box width */
+    height: auto; /* Maintains aspect ratio */
+  }
+  
 
   .choose-plan {
     text-align: center;
@@ -169,5 +179,5 @@ main {
       width: 50%; /* Adjust width for smaller screens (optional) */
     }
   }
-  
+
   
