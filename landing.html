@@ -8,11 +8,17 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Platform</h1>
+        <h1>EARTH.COM</h1>
         <nav>
             <ul>
+                <li>
+                    <select id="language">
+                        <option value="en" selected>English</option>
+                        <option value="zh">Chinese(very soon)</option>
+                    </select>
                 <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Species</a></li>
+                <li><a href="#">Contact Us</a></li>
                 <li><a href="#">About Us</a></li>
             </ul>
         </nav>
@@ -20,11 +26,52 @@
 
     <main>
         <section class="hero">
-            <h2>Unlock Your Potential</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod est eget mi finibus, nec tincidunt ipsum pulvinar. Maecenas vitae augue at elit tristique tincidunt.</p>
+            <h2>Who are we?</h2>
+            <p>We are a group of carbon-based life forms currently living on the third planet of the solar system.</p>
+            <p>Feel free to visit but don't invade us we are very friendly!(most of us)</p>
             <a href="#" class="btn">Get Started</a>
+            <p>Already visited earth? <a href='#'>login here</a></p>
         </section>
-
+        <section class="team">
+           <h2>Our Team</h2>
+           <div class="team-members">
+           <article class="team-member">
+           <img src="images/team-member-1.jpg" alt="Human">
+           <h3>Human</h3>
+           <p>CEO</p>
+        </article>
+        <article class="team-member">
+        <img src="images/team-member-2.jpg" alt="Tree">
+        <h3>Tree</h3>
+        <p>Product manager</p>
+        </article>
+        <article class="team-member">
+            <img src="images/team-member-2.jpg" alt="Dog">
+            <h3>Dog</h3>
+            <p>Security assistant</p>
+            </article>
+            <article class="team-member">
+                <img src="images/team-member-2.jpg" alt="Cat">
+                <h3>Cat</h3>
+                <p>They do funny stuff</p>
+                </article>
+        </div>
+</section>
+        <section class="login">
+            <h2>Already a Member? Login Here</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+                <a href="#">Forgot Password?</a>
+            </form>
+        </section>
         <section class="benefits">
             <h3>Why Choose Us?</h3>
             <ul>
@@ -43,21 +90,7 @@
             </ul>
         </section>
 
-        <section class="login">
-            <h2>Already a Member? Login Here</h2>
-            <form action="#">
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <button type="submit">Login</button>
-                <a href="#">Forgot Password?</a>
-            </form>
-        </section>
+
     </main>
 
     <footer>

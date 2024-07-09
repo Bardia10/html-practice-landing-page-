@@ -70,3 +70,36 @@ main {
 .benefits h3 {
     text-align: center;
     margin-bottom:
+}
+
+.team {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust gap size as needed */
+  }
+  
+.team-member {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(33% - 40px); /* Adjust width for desired number of members per row */
+  }
+  
+@media only screen and (max-width: 768px) {
+    .team-member {
+      width: 50%; /* Adjust width for smaller screens */
+    }
+  }
+  
+@media only screen and (max-width: 480px) {
+    .team-member {
+      width: 100%; /* Stack team members on top of each other for very small screens */
+    }
+  }
